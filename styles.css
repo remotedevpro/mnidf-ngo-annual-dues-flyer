@@ -431,4 +431,20 @@ font-size: 2.5rem;
     flex-direction: column;
     gap: 5px;
   }
+
+
+.quran-verse {
+  color: #7fcdbb;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  /*border: 5px solid white;*/
+  width:100%;
+  margin: 0 auto;
+  
+  
+}
+
+
 }
