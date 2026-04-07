@@ -1,0 +1,434 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BACKGROUND */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Winter Morning Gradient */
+  background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+
+/* MAIN CONTAINER */
+.poster {
+  width: 95%;
+  max-width: 700px;
+  padding: 25px;
+  margin: 50px auto;
+  border-radius: 25px;
+  border: 5px solid lightgreen;
+
+  /*background: linear-gradient(180deg, rgba(255,255,255,0.2), rgba(0,0,0,0.2));*/
+
+
+  background:
+    radial-gradient(circle at 50% 15%, rgba(220, 245, 240, 0.9) 0%, rgba(220,245,240,0) 40%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.4) 0%, transparent 30%),
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 0%, transparent 25%),
+
+    linear-gradient(
+      180deg,
+      #cfeee5 0%,     /* top light mint */
+      #7fcdbb 25%,    /* soft aqua */
+      #2a9d8f 50%,    /* green */
+      #1f6f5c 75%,    /* deep green */
+      #0f2a44 100%    /* dark blue bottom */
+    );
+
+
+
+  backdrop-filter: blur(12px);
+
+  color: #fff;
+  text-align: center;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+
+  animation: fadeIn 1s ease;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  padding-bottom: 150px;
+}
+
+
+.poster::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.05;
+
+  pointer-events: none;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  /*flex-direction: column;*/
+  align-items: center;
+  /*margin-left: 150px;*/
+  background: white;
+  width: 60%;
+  padding: 15px;
+  border-radius: 30px;
+  margin:25px 15px ;
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /*margin-left: 15px;*/
+}
+
+
+.logo {
+  width: 120px;
+  /*height: 100px;*/
+  margin-bottom: 17px;
+  
+  
+}
+
+.arabic {
+  width: 220px;
+
+}
+
+.english {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+/* TITLE BANNER */
+.banner {
+  background: linear-gradient(to right, #013e28, #1d9a75);
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 2.2rem;
+}
+
+.banner-highlight {
+  color: #d4af37; /* Gold accent */
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+}
+/* DATE */
+
+.effective-date {
+  display: flex;
+  gap: 5px;
+  
+  
+  /*border: 5px solid rgba(12, 47, 222, 0.3);*/
+}
+
+
+.banner-notice {
+  color: white; /* Gold accent */
+  background-color: black;
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+  font-size: 1.8;
+}
+
+.date {
+  background: linear-gradient(135deg, rgba(156, 204, 150, 0.3), rgba(243, 245, 245, 0.951));
+  /*background: rgba(255, 255, 255, 0.2);*/
+  /*border: 5px solid rgba(24, 60, 221, 0.3)  ;*/
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  /*padding: 40px;*/
+  text-align: center;
+  color: #2c3e50;
+  width: 95%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+}
+
+.date p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(2, 46, 2);
+}
+
+span {
+  color: #1d9a75;
+}
+
+.jan-01-card {
+  position: relative;
+  width: 17%;
+  
+  display: flex;
+  
+  /*border: 5px solid rgba(255, 0, 0, 0.3);*/
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0;
+  margin: 0;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.2);
+  /*border: 5px solid rgba(24, 60, 221, 0.3)  ;*/
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  /*padding: 40px;*/
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month {
+  display: flex;
+  font-size: 0.9rem;
+  letter-spacing: 8px;
+  font-weight:bold;
+  color: #030302;
+  justify-self: center;
+  
+  
+}
+
+.day {
+  display: block;
+  font-size: 1rem;
+  font-weight:bolder;
+  line-height: 1;
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 5px;
+  color:#030302;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: #d4af37; /* Gold accent */
+  margin: 5px 0;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.7;
+  color: #030302;
+}
+
+
+
+.rates-box {
+  background: linear-gradient(to right, #013e28, #1d9a75);
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.8rem;
+}
+
+.rates-box h1 {
+  margin-bottom: 30px;
+  font-size: 2.0rem
+}
+
+/* RATE CARD */
+.rate-card {
+  display: flex;
+  justify-content:space-between;
+
+  background: #fff;
+  color: #0f2a44;
+
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+
+  transition: 0.3s;
+}
+
+.rate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* NOTICE */
+.notice {
+  margin: 20px;
+  padding: 20px;
+
+  background:linear-gradient(135deg, rgba(1, 25, 7, 0.3), rgba(0, 18, 14, 0.9));
+  color:#e2ebf0;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 3rem;
+  
+}
+
+/* PAYMENT */
+
+.payments-parent-container {
+  background: linear-gradient(to right, #013e28, #1d9a75);
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.8rem;
+
+}
+
+.payment-rate-card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  color: #145405;
+
+  background: #fff;
+  color: #0f2a44;
+
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+
+  transition: 0.3s;
+  align-items: center;
+
+}
+
+.payment-rate-card1 .bank-logo {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.wema-bank {
+  font-weight: bold;
+  color: #145405;
+}
+
+.payment-rate-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+.payment-rate-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+  background: #fff;
+  color: #0f2a44;
+
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+
+  transition: 0.3s;
+  gap: 20px;
+
+}
+.payment-rate-card2 p {
+  color: #145405;
+  font-weight:bolder;
+}
+
+.payment-rate-card2:hover {
+  transform: translateY(5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.acct-no {
+  color: black;
+font-size: 2.5rem;
+
+}
+
+/* QUOTE */
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  border: 5px solid green;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.quote span {
+  
+  
+  margin-top: 5px;
+  font-weight: bold;
+  
+}
+.quran-verse {
+  color: #7fcdbb;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  /*border: 5px solid white;*/
+  margin-left: 350px;
+  
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .rate-card {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
